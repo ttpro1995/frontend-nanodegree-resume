@@ -1,0 +1,16 @@
+{
+    "education": {
+        "school":[{ 
+        "name":"University of SCience",
+        "schools'city":"Ho chi minh city",
+        "majors":"computer science"
+    	}],
+    	"Online Course":[
+    	{"name":"Javascript",
+    	"date":"today"
+    	},
+    	{"name":"meow",
+    	"date":"everyday"}
+    	]
+    }
+}
