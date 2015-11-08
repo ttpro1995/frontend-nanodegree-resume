@@ -101,11 +101,15 @@ if (bio.Skills.length > 0){//if there are any skill
 }
 
 //for-in loops
-	$("#header").append(HTMLworkStart);
+	$("#workExperience").append(HTMLworkStart);
 	for (i in work.jobs){
 		var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[i].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%",work.jobs[i].title);
-		$(".work-entry:last").append(formattedEmployer+formattedTitle);
-		
+		var formattedEmployerTitle = formattedEmployer+formattedTitle;
 
+		var formattedDate = HTMLworkDates.replace("%data%",work.jobs[i].dates);
+		var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[i].location);
+		var fornattedDescription = HTMLworkDescription.replace("%data%",work.jobs[i].description);
+
+		$(".work-entry:last").append(formattedEmployerTitle+formattedDate+formattedLocation+fornattedDescription);
 	}
